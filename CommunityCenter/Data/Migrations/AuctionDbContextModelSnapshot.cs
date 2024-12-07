@@ -25,10 +25,6 @@ namespace CommunityCenter.Migrations
                     b.Property<int>("AccessFailedCount")
                         .HasColumnType("INTEGER");
 
-                    b.Property<string>("Address")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
                     b.Property<string>("ConcurrencyStamp")
                         .IsConcurrencyToken()
                         .HasColumnType("TEXT");
@@ -41,11 +37,9 @@ namespace CommunityCenter.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("FirstName")
-                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<string>("LastName")
-                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<bool>("LockoutEnabled")
@@ -70,10 +64,6 @@ namespace CommunityCenter.Migrations
 
                     b.Property<bool>("PhoneNumberConfirmed")
                         .HasColumnType("INTEGER");
-
-                    b.Property<string>("ProfileImageUrl")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
 
                     b.Property<string>("SecurityStamp")
                         .HasColumnType("TEXT");
@@ -142,7 +132,6 @@ namespace CommunityCenter.Migrations
                         .HasColumnType("TEXT");
 
                     b.Property<string>("ImageUrl")
-                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<bool>("IsActive")
@@ -156,7 +145,6 @@ namespace CommunityCenter.Migrations
                         .HasColumnType("decimal(18,2)");
 
                     b.Property<string>("WinningBidderId")
-                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.HasKey("Id");
@@ -318,8 +306,7 @@ namespace CommunityCenter.Migrations
                     b.HasOne("CommunityCenter.Models.CommunityCenterModels+ApplicationUser", "WinningBidder")
                         .WithMany("WonAuctions")
                         .HasForeignKey("WinningBidderId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
+                        .OnDelete(DeleteBehavior.Restrict);
 
                     b.Navigation("WinningBidder");
                 });

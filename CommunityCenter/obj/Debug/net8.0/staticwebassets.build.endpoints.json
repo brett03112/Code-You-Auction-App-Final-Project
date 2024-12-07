@@ -29,7 +29,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 05 Dec 2024 00:59:59 GMT"
+          "Value": "Sat, 07 Dec 2024 18:29:04 GMT"
         }
       ],
       "EndpointProperties": [
@@ -74,7 +74,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 05 Dec 2024 00:59:59 GMT"
+          "Value": "Sat, 07 Dec 2024 18:29:04 GMT"
         }
       ],
       "EndpointProperties": [
@@ -2305,51 +2305,6 @@
       ]
     },
     {
-      "Route": "css/site.c2tiyv64ts.css",
-      "AssetFile": "css/site.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "362"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"pAGv4ietcJNk/EwsQZ5BN9+K4MuNYS2a9wl4Jw+q9D0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 04 Dec 2024 23:32:38 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "c2tiyv64ts"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-pAGv4ietcJNk/EwsQZ5BN9+K4MuNYS2a9wl4Jw+q9D0="
-        },
-        {
-          "Name": "label",
-          "Value": "css/site.css"
-        }
-      ]
-    },
-    {
       "Route": "css/site.css",
       "AssetFile": "css/site.css",
       "Selectors": [],
@@ -2364,7 +2319,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "362"
+          "Value": "1490"
         },
         {
           "Name": "Content-Type",
@@ -2372,17 +2327,62 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"pAGv4ietcJNk/EwsQZ5BN9+K4MuNYS2a9wl4Jw+q9D0=\""
+          "Value": "\"weqiyzZpkiofuv+zNE7JZicZwVvKvwaQYdjY3w6+Isk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 04 Dec 2024 23:32:38 GMT"
+          "Value": "Sat, 07 Dec 2024 18:47:41 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-pAGv4ietcJNk/EwsQZ5BN9+K4MuNYS2a9wl4Jw+q9D0="
+          "Value": "sha256-weqiyzZpkiofuv+zNE7JZicZwVvKvwaQYdjY3w6+Isk="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.xwycnahzz3.css",
+      "AssetFile": "css/site.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1490"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"weqiyzZpkiofuv+zNE7JZicZwVvKvwaQYdjY3w6+Isk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 07 Dec 2024 18:47:41 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "xwycnahzz3"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-weqiyzZpkiofuv+zNE7JZicZwVvKvwaQYdjY3w6+Isk="
+        },
+        {
+          "Name": "label",
+          "Value": "css/site.css"
         }
       ]
     },
@@ -2465,6 +2465,908 @@
         {
           "Name": "integrity",
           "Value": "sha256-Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM="
+        }
+      ]
+    },
+    {
+      "Route": "images/desserts/German_chocolate_bundt_cake.jpg",
+      "AssetFile": "images/desserts/German_chocolate_bundt_cake.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1828994"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CBwBEzIckpI7Uv3JYkSgschvS74wQ2z9hlZT6qDMEe0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 23 Nov 2024 17:12:44 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-CBwBEzIckpI7Uv3JYkSgschvS74wQ2z9hlZT6qDMEe0="
+        }
+      ]
+    },
+    {
+      "Route": "images/desserts/German_chocolate_bundt_cake.khp81elgso.jpg",
+      "AssetFile": "images/desserts/German_chocolate_bundt_cake.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1828994"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CBwBEzIckpI7Uv3JYkSgschvS74wQ2z9hlZT6qDMEe0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 23 Nov 2024 17:12:44 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "khp81elgso"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-CBwBEzIckpI7Uv3JYkSgschvS74wQ2z9hlZT6qDMEe0="
+        },
+        {
+          "Name": "label",
+          "Value": "images/desserts/German_chocolate_bundt_cake.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "images/desserts/apple_pie.8vpewz3c57.jpg",
+      "AssetFile": "images/desserts/apple_pie.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1471974"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dDYcRKUNv5dEZ777/6ho1kv0o1KLXJZszN2E+O6dPCc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 23 Nov 2024 17:04:30 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8vpewz3c57"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-dDYcRKUNv5dEZ777/6ho1kv0o1KLXJZszN2E+O6dPCc="
+        },
+        {
+          "Name": "label",
+          "Value": "images/desserts/apple_pie.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "images/desserts/apple_pie.jpg",
+      "AssetFile": "images/desserts/apple_pie.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1471974"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dDYcRKUNv5dEZ777/6ho1kv0o1KLXJZszN2E+O6dPCc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 23 Nov 2024 17:04:30 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-dDYcRKUNv5dEZ777/6ho1kv0o1KLXJZszN2E+O6dPCc="
+        }
+      ]
+    },
+    {
+      "Route": "images/desserts/banana_pudding.jpg",
+      "AssetFile": "images/desserts/banana_pudding.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1276412"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8ieYFvNi1I6JNl48RPjf8UgF/oAuK0g72/SXXP5zcac=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 23 Nov 2024 17:02:27 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-8ieYFvNi1I6JNl48RPjf8UgF/oAuK0g72/SXXP5zcac="
+        }
+      ]
+    },
+    {
+      "Route": "images/desserts/banana_pudding.yjojx958ne.jpg",
+      "AssetFile": "images/desserts/banana_pudding.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1276412"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8ieYFvNi1I6JNl48RPjf8UgF/oAuK0g72/SXXP5zcac=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 23 Nov 2024 17:02:27 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "yjojx958ne"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-8ieYFvNi1I6JNl48RPjf8UgF/oAuK0g72/SXXP5zcac="
+        },
+        {
+          "Name": "label",
+          "Value": "images/desserts/banana_pudding.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "images/desserts/brownies.jpg",
+      "AssetFile": "images/desserts/brownies.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1235830"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Blq+fiMIMdVB5LtcMCD/n0vi7EQqcdgUohNj9WeKv/o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 23 Nov 2024 17:10:53 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Blq+fiMIMdVB5LtcMCD/n0vi7EQqcdgUohNj9WeKv/o="
+        }
+      ]
+    },
+    {
+      "Route": "images/desserts/brownies.qrq6tovsx0.jpg",
+      "AssetFile": "images/desserts/brownies.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1235830"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Blq+fiMIMdVB5LtcMCD/n0vi7EQqcdgUohNj9WeKv/o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 23 Nov 2024 17:10:53 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qrq6tovsx0"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Blq+fiMIMdVB5LtcMCD/n0vi7EQqcdgUohNj9WeKv/o="
+        },
+        {
+          "Name": "label",
+          "Value": "images/desserts/brownies.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "images/desserts/key_lime_pie.jpg",
+      "AssetFile": "images/desserts/key_lime_pie.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1290036"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"s/aN87LsLr9hSP68lZFt5QwywwgVOxdy/J7qOsto6t8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 23 Nov 2024 17:26:48 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-s/aN87LsLr9hSP68lZFt5QwywwgVOxdy/J7qOsto6t8="
+        }
+      ]
+    },
+    {
+      "Route": "images/desserts/key_lime_pie.r6sgsu38uq.jpg",
+      "AssetFile": "images/desserts/key_lime_pie.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1290036"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"s/aN87LsLr9hSP68lZFt5QwywwgVOxdy/J7qOsto6t8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 23 Nov 2024 17:26:48 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "r6sgsu38uq"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-s/aN87LsLr9hSP68lZFt5QwywwgVOxdy/J7qOsto6t8="
+        },
+        {
+          "Name": "label",
+          "Value": "images/desserts/key_lime_pie.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "images/desserts/orange_slice_cheesecake.deec3ff6za.jpg",
+      "AssetFile": "images/desserts/orange_slice_cheesecake.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1570209"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Gz04Ql+w4kLlCVbVsWlus/aRWWrS4+zvZKzMhXL+eJ0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 23 Nov 2024 17:28:31 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "deec3ff6za"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Gz04Ql+w4kLlCVbVsWlus/aRWWrS4+zvZKzMhXL+eJ0="
+        },
+        {
+          "Name": "label",
+          "Value": "images/desserts/orange_slice_cheesecake.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "images/desserts/orange_slice_cheesecake.jpg",
+      "AssetFile": "images/desserts/orange_slice_cheesecake.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1570209"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Gz04Ql+w4kLlCVbVsWlus/aRWWrS4+zvZKzMhXL+eJ0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 23 Nov 2024 17:28:31 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Gz04Ql+w4kLlCVbVsWlus/aRWWrS4+zvZKzMhXL+eJ0="
+        }
+      ]
+    },
+    {
+      "Route": "images/desserts/peach_cobbler.jpg",
+      "AssetFile": "images/desserts/peach_cobbler.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1425490"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"eZNN4Ux178UB0Z86n2FLgzBvCaoo9CYAiYpdAwx2z9M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 23 Nov 2024 17:06:22 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-eZNN4Ux178UB0Z86n2FLgzBvCaoo9CYAiYpdAwx2z9M="
+        }
+      ]
+    },
+    {
+      "Route": "images/desserts/peach_cobbler.ldd7oj92re.jpg",
+      "AssetFile": "images/desserts/peach_cobbler.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1425490"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"eZNN4Ux178UB0Z86n2FLgzBvCaoo9CYAiYpdAwx2z9M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 23 Nov 2024 17:06:22 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ldd7oj92re"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-eZNN4Ux178UB0Z86n2FLgzBvCaoo9CYAiYpdAwx2z9M="
+        },
+        {
+          "Name": "label",
+          "Value": "images/desserts/peach_cobbler.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "images/desserts/snickerdoodle_cookies.jpg",
+      "AssetFile": "images/desserts/snickerdoodle_cookies.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1522211"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"n+bz9AHAka/exkxWq416QL2IvFXIvCKc7Sjs+hSD7GQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 23 Nov 2024 17:08:15 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-n+bz9AHAka/exkxWq416QL2IvFXIvCKc7Sjs+hSD7GQ="
+        }
+      ]
+    },
+    {
+      "Route": "images/desserts/snickerdoodle_cookies.pu1s5rnx41.jpg",
+      "AssetFile": "images/desserts/snickerdoodle_cookies.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1522211"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"n+bz9AHAka/exkxWq416QL2IvFXIvCKc7Sjs+hSD7GQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 23 Nov 2024 17:08:15 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "pu1s5rnx41"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-n+bz9AHAka/exkxWq416QL2IvFXIvCKc7Sjs+hSD7GQ="
+        },
+        {
+          "Name": "label",
+          "Value": "images/desserts/snickerdoodle_cookies.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "images/desserts/strawberry_rhubarb_pie.jpg",
+      "AssetFile": "images/desserts/strawberry_rhubarb_pie.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1840386"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DtRhHbpL9DjmqExxcW1O2jv5QsLTYSLcpBAHFRcGfWE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 23 Nov 2024 17:22:46 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-DtRhHbpL9DjmqExxcW1O2jv5QsLTYSLcpBAHFRcGfWE="
+        }
+      ]
+    },
+    {
+      "Route": "images/desserts/strawberry_rhubarb_pie.y4sytbaa8n.jpg",
+      "AssetFile": "images/desserts/strawberry_rhubarb_pie.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1840386"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DtRhHbpL9DjmqExxcW1O2jv5QsLTYSLcpBAHFRcGfWE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 23 Nov 2024 17:22:46 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "y4sytbaa8n"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-DtRhHbpL9DjmqExxcW1O2jv5QsLTYSLcpBAHFRcGfWE="
+        },
+        {
+          "Name": "label",
+          "Value": "images/desserts/strawberry_rhubarb_pie.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "images/desserts/strawberry_shortcake.jpg",
+      "AssetFile": "images/desserts/strawberry_shortcake.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1301128"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UM2Hu+V90uvvAH/3FvMMJ2n+84PRyOFScPSvx13JheU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 23 Nov 2024 17:16:48 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-UM2Hu+V90uvvAH/3FvMMJ2n+84PRyOFScPSvx13JheU="
+        }
+      ]
+    },
+    {
+      "Route": "images/desserts/strawberry_shortcake.oqfoxrkqqw.jpg",
+      "AssetFile": "images/desserts/strawberry_shortcake.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1301128"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UM2Hu+V90uvvAH/3FvMMJ2n+84PRyOFScPSvx13JheU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 23 Nov 2024 17:16:48 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "oqfoxrkqqw"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-UM2Hu+V90uvvAH/3FvMMJ2n+84PRyOFScPSvx13JheU="
+        },
+        {
+          "Name": "label",
+          "Value": "images/desserts/strawberry_shortcake.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "images/holiday-desserts.jpg",
+      "AssetFile": "images/holiday-desserts.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1544100"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VciwF7ll2Vd4ICVGuWa0t+NFgGD3tE8IhQKbP6G5+HA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 23 Nov 2024 17:31:21 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-VciwF7ll2Vd4ICVGuWa0t+NFgGD3tE8IhQKbP6G5+HA="
+        }
+      ]
+    },
+    {
+      "Route": "images/holiday-desserts.x5gmlar255.jpg",
+      "AssetFile": "images/holiday-desserts.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1544100"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VciwF7ll2Vd4ICVGuWa0t+NFgGD3tE8IhQKbP6G5+HA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 23 Nov 2024 17:31:21 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "x5gmlar255"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-VciwF7ll2Vd4ICVGuWa0t+NFgGD3tE8IhQKbP6G5+HA="
+        },
+        {
+          "Name": "label",
+          "Value": "images/holiday-desserts.jpg"
         }
       ]
     },

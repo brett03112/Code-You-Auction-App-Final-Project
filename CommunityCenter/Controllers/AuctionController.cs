@@ -5,17 +5,22 @@ using CommunityCenter.Data;
 using CommunityCenter.wwwroot.js.signalr.Hubs;
 using Microsoft.AspNetCore.SignalR;
 using static CommunityCenter.Models.CommunityCenterModels;
+using static CommunityCenter.wwwroot.js.signalr.Hubs.AuctionHub;
+using static CommunityCenter.Extensions.ImageExtensions;
+using CommunityCenter.Extensions;
 
 [Authorize]
 public class AuctionController : Controller
 {
     private readonly AuctionDbContext _context;
     private readonly IHubContext<AuctionHub> _hubContext;
+    private readonly IWebHostEnvironment _environment;
 
-    public AuctionController(AuctionDbContext context, IHubContext<AuctionHub> hubContext)
+    public AuctionController(AuctionDbContext context, IHubContext<AuctionHub> hubContext, IWebHostEnvironment environment)
     {
         _context = context;
         _hubContext = hubContext;
+        _environment = environment;
     }
 
     public async Task<IActionResult> Index()
@@ -32,7 +37,9 @@ public class AuctionController : Controller
     public async Task<IActionResult> PlaceBid(int dessertId, decimal bidAmount)
     {
         var dessert = await _context.Desserts.FindAsync(dessertId);
-        if (dessert == null || !dessert.IsActive || bidAmount <= dessert.CurrentPrice)
+        var bidder = await _context.Users.FindAsync(User.Identity?.Name);
+
+        if (dessert == null || !dessert.IsActive || bidAmount <= dessert.CurrentPrice || bidder == null)
         {
             return Json(new { success = false, message = "Invalid bid" });
         }
@@ -40,13 +47,15 @@ public class AuctionController : Controller
         var bid = new Bid
         {
             DessertId = dessertId,
-            BidderId = User.Identity.Name,
+            BidderId = bidder.Id,
             Amount = bidAmount,
-            TimeStamp = DateTime.UtcNow
+            TimeStamp = DateTime.UtcNow,
+            Dessert = dessert,
+            Bidder = bidder
         };
 
         dessert.CurrentPrice = bidAmount;
-        dessert.WinningBidderId = User.Identity.Name;
+        dessert.WinningBidderId = bidder.Id;
 
         _context.Bids.Add(bid);
         await _context.SaveChangesAsync();
@@ -54,8 +63,8 @@ public class AuctionController : Controller
         await _hubContext.Clients.All.SendAsync("BidUpdated",
             dessertId,
             bidAmount,
-            User.Identity.Name,
-            User.Identity.Name);
+            bidder.UserName,
+            bidder.UserName);
 
         return Json(new { success = true });
     }
@@ -68,10 +77,15 @@ public class AuctionController : Controller
 
     [HttpPost]
     [Authorize(Roles = "Admin")]
-    public async Task<IActionResult> Create(Dessert dessert)
+    public async Task<IActionResult> Create(Dessert dessert, IFormFile? image = null)
     {
         if (ModelState.IsValid)
         {
+            if (image != null)
+            {
+                dessert.ImageUrl = await image.SaveImageAsync(_environment);
+            }
+        
             dessert.IsActive = true;
             dessert.CurrentPrice = dessert.StartingPrice;
             _context.Add(dessert);

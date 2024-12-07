@@ -2,7 +2,99 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="winter-background">
+    <div class="content-container container">
+        <div class="row justify-content-center">
+            <div class="col-md-10 text-center">
+                <h1 class="display-4 mb-4">Welcome to Community Center Dessert Auction</h1>
+                
+                <img src="/images/holiday-desserts.jpg" alt="Holiday Dessert Display" class="feature-image mb-4">
+
+                @if (!ViewBag.HasActiveAuctions)
+                {
+                    <div class="alert alert-info">
+                        Waiting for the auction to start...
+                    </div>
+                }
+                
+                <div class="row mb-4">
+                    <div class="col-md-6">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Current Auctions</h5>
+                                <p class="card-text">View all available desserts and place your bids!</p>
+                                <a href="@Url.Action("Index", "Auction")" class="btn btn-primary btn-lg">
+                                    View Auction Items
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Past Auctions</h5>
+                                <p class="card-text">View completed auctions and winning bids.</p>
+                                <a href="@Url.Action("Index", "PastAuctions")" class="btn btn-secondary btn-lg">
+                                    View Past Auctions
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                @await Html.PartialAsync("_AuctionTimer", new AuctionTimerModel())
+            </div>
+        </div>
+    </div>
 </div>
+
+@section Scripts {
+    <script>
+        document.getElementById('startAuction')?.addEventListener('click', async function() {
+            const days = parseInt(document.getElementById('days').value);
+            const hours = parseInt(document.getElementById('hours').value);
+            const minutes = parseInt(document.getElementById('minutes').value);
+
+            try {
+                const response = await fetch('/Home/StartAuction', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'RequestVerificationToken': document.querySelector('input[name="__RequestVerificationToken"]').value
+                    },
+                    body: JSON.stringify({ days, hours, minutes })
+                });
+
+                const result = await response.json();
+                if (result.success) {
+                    window.location.href = '/Auction';
+                }
+            } catch (error) {
+                console.error('Error starting auction:', error);
+                alert('Failed to start auction. Please try again.');
+            }
+        });
+
+        // Create snowflakes
+        function createSnowflakes() {
+            const numberOfSnowflakes = 50;
+            const container = document.querySelector('.winter-background');
+            
+            for (let i = 0; i < numberOfSnowflakes; i++) {
+                const snowflake = document.createElement('div');
+                snowflake.className = 'snowflake';
+                
+                // Random positioning and animation
+                snowflake.style.left = `${Math.random() * 100}vw`;
+                snowflake.style.animationDuration = `${Math.random() * 3 + 2}s`;
+                snowflake.style.opacity = Math.random();
+                snowflake.style.transform = `scale(${Math.random()})`;
+                
+                container.appendChild(snowflake);
+            }
+        }
+
+        // Initialize snowflakes
+        document.addEventListener('DOMContentLoaded', createSnowflakes);
+    </script>
+}

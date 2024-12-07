@@ -38,9 +38,6 @@ namespace CommunityCenter.Controllers
                 FirstName = user.FirstName,
                 LastName = user.LastName,
                 Email = user.Email,
-                PhoneNumber = user.PhoneNumber,
-                Address = user.Address,
-                ProfileImageUrl = user.ProfileImageUrl
             };
 
             return View(viewModel);
@@ -59,30 +56,6 @@ namespace CommunityCenter.Controllers
             {
                 return NotFound();
             }
-
-            if (model.ProfileImage != null)
-            {
-                var uploadsFolder = Path.Combine(_environment.WebRootPath, "uploads");
-                if (!Directory.Exists(uploadsFolder))
-                {
-                    Directory.CreateDirectory(uploadsFolder);
-                }
-
-                var uniqueFileName = $"{Guid.NewGuid()}_{model.ProfileImage.FileName}";
-                var filePath = Path.Combine(uploadsFolder, uniqueFileName);
-
-                using (var fileStream = new FileStream(filePath, FileMode.Create))
-                {
-                    await model.ProfileImage.CopyToAsync(fileStream);
-                }
-
-                user.ProfileImageUrl = $"/uploads/{uniqueFileName}";
-            }
-
-            user.FirstName = model.FirstName;
-            user.LastName = model.LastName;
-            user.PhoneNumber = model.PhoneNumber;
-            user.Address = model.Address;
 
             if (user.Email != model.Email)
             {
@@ -109,7 +82,7 @@ namespace CommunityCenter.Controllers
             return View("Index", model);
         }
 
-        public async Task<IActionResult> ChangePassword()
+        public IActionResult ChangePassword()
         {
             return View(new ChangePasswordViewModels());
         }
@@ -129,7 +102,7 @@ namespace CommunityCenter.Controllers
             }
 
             var result = await _userManager.ChangePasswordAsync(user,
-                model.CurrentPassword, model.NewPassword);
+                model.CurrentPassword!, model.NewPassword!);
 
             if (result.Succeeded)
             {
@@ -178,5 +151,4 @@ namespace CommunityCenter.Controllers
             return View(wonAuctions);
         }
     }
-
 }

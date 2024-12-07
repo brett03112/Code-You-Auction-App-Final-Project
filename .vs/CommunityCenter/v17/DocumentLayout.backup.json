@@ -3,48 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\brett\\Desktop\\Code-You-Auction-App-Final-Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FDA94833-149C-4055-90EF-18CA6ACE3801}|CommunityCenter\\CommunityCenter.csproj|c:\\users\\brett\\desktop\\code-you-auction-app-final-project\\communitycenter\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{FDA94833-149C-4055-90EF-18CA6ACE3801}|CommunityCenter\\CommunityCenter.csproj|solutionrelative:communitycenter\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\brett\\Desktop\\Code-You-Auction-App-Final-Project\\CommunityCenter\\Migrations\\20241205222143_AddUserProfileFields.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CommunityCenter\\Migrations\\20241205222143_AddUserProfileFields.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FDA94833-149C-4055-90EF-18CA6ACE3801}|CommunityCenter\\CommunityCenter.csproj|c:\\users\\brett\\desktop\\code-you-auction-app-final-project\\communitycenter\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{FDA94833-149C-4055-90EF-18CA6ACE3801}|CommunityCenter\\CommunityCenter.csproj|solutionrelative:communitycenter\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FDA94833-149C-4055-90EF-18CA6ACE3801}|CommunityCenter\\CommunityCenter.csproj|c:\\users\\brett\\desktop\\code-you-auction-app-final-project\\communitycenter\\views\\profile\\wonauctions.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{FDA94833-149C-4055-90EF-18CA6ACE3801}|CommunityCenter\\CommunityCenter.csproj|solutionrelative:communitycenter\\views\\profile\\wonauctions.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FDA94833-149C-4055-90EF-18CA6ACE3801}|CommunityCenter\\CommunityCenter.csproj|c:\\users\\brett\\desktop\\code-you-auction-app-final-project\\communitycenter\\views\\profile\\biddinghistory.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{FDA94833-149C-4055-90EF-18CA6ACE3801}|CommunityCenter\\CommunityCenter.csproj|solutionrelative:communitycenter\\views\\profile\\biddinghistory.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FDA94833-149C-4055-90EF-18CA6ACE3801}|CommunityCenter\\CommunityCenter.csproj|c:\\users\\brett\\desktop\\code-you-auction-app-final-project\\communitycenter\\controllers\\profilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FDA94833-149C-4055-90EF-18CA6ACE3801}|CommunityCenter\\CommunityCenter.csproj|solutionrelative:communitycenter\\controllers\\profilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FDA94833-149C-4055-90EF-18CA6ACE3801}|CommunityCenter\\CommunityCenter.csproj|c:\\users\\brett\\desktop\\code-you-auction-app-final-project\\communitycenter\\viewmodels\\profileviewmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FDA94833-149C-4055-90EF-18CA6ACE3801}|CommunityCenter\\CommunityCenter.csproj|solutionrelative:communitycenter\\viewmodels\\profileviewmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FDA94833-149C-4055-90EF-18CA6ACE3801}|CommunityCenter\\CommunityCenter.csproj|c:\\users\\brett\\desktop\\code-you-auction-app-final-project\\communitycenter\\views\\profile\\changepassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{FDA94833-149C-4055-90EF-18CA6ACE3801}|CommunityCenter\\CommunityCenter.csproj|solutionrelative:communitycenter\\views\\profile\\changepassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FDA94833-149C-4055-90EF-18CA6ACE3801}|CommunityCenter\\CommunityCenter.csproj|c:\\users\\brett\\desktop\\code-you-auction-app-final-project\\communitycenter\\viewmodels\\changepasswordviewmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FDA94833-149C-4055-90EF-18CA6ACE3801}|CommunityCenter\\CommunityCenter.csproj|solutionrelative:communitycenter\\viewmodels\\changepasswordviewmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FDA94833-149C-4055-90EF-18CA6ACE3801}|CommunityCenter\\CommunityCenter.csproj|c:\\users\\brett\\desktop\\code-you-auction-app-final-project\\communitycenter\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FDA94833-149C-4055-90EF-18CA6ACE3801}|CommunityCenter\\CommunityCenter.csproj|solutionrelative:communitycenter\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FDA94833-149C-4055-90EF-18CA6ACE3801}|CommunityCenter\\CommunityCenter.csproj|c:\\users\\brett\\desktop\\code-you-auction-app-final-project\\communitycenter\\controllers\\auctioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FDA94833-149C-4055-90EF-18CA6ACE3801}|CommunityCenter\\CommunityCenter.csproj|solutionrelative:communitycenter\\controllers\\auctioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FDA94833-149C-4055-90EF-18CA6ACE3801}|CommunityCenter\\CommunityCenter.csproj|c:\\users\\brett\\desktop\\code-you-auction-app-final-project\\communitycenter\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FDA94833-149C-4055-90EF-18CA6ACE3801}|CommunityCenter\\CommunityCenter.csproj|solutionrelative:communitycenter\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -66,145 +30,29 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "_ViewImports.cshtml",
-              "DocumentMoniker": "C:\\Users\\brett\\Desktop\\Code-You-Auction-App-Final-Project\\CommunityCenter\\Views\\_ViewImports.cshtml",
-              "RelativeDocumentMoniker": "CommunityCenter\\Views\\_ViewImports.cshtml",
-              "ToolTip": "C:\\Users\\brett\\Desktop\\Code-You-Auction-App-Final-Project\\CommunityCenter\\Views\\_ViewImports.cshtml",
-              "RelativeToolTip": "CommunityCenter\\Views\\_ViewImports.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-05T22:23:52.682Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "20241205222143_AddUserProfileFields.cs",
-              "DocumentMoniker": "C:\\Users\\brett\\Desktop\\Code-You-Auction-App-Final-Project\\CommunityCenter\\Migrations\\20241205222143_AddUserProfileFields.cs",
-              "RelativeDocumentMoniker": "CommunityCenter\\Migrations\\20241205222143_AddUserProfileFields.cs",
-              "ToolTip": "C:\\Users\\brett\\Desktop\\Code-You-Auction-App-Final-Project\\CommunityCenter\\Migrations\\20241205222143_AddUserProfileFields.cs",
-              "RelativeToolTip": "CommunityCenter\\Migrations\\20241205222143_AddUserProfileFields.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-05T22:21:43.358Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\brett\\Desktop\\Code-You-Auction-App-Final-Project\\CommunityCenter\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "CommunityCenter\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\brett\\Desktop\\Code-You-Auction-App-Final-Project\\CommunityCenter\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "CommunityCenter\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABsAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-05T22:19:42.93Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "WonAuctions.cshtml",
-              "DocumentMoniker": "C:\\Users\\brett\\Desktop\\Code-You-Auction-App-Final-Project\\CommunityCenter\\Views\\Profile\\WonAuctions.cshtml",
-              "RelativeDocumentMoniker": "CommunityCenter\\Views\\Profile\\WonAuctions.cshtml",
-              "ToolTip": "C:\\Users\\brett\\Desktop\\Code-You-Auction-App-Final-Project\\CommunityCenter\\Views\\Profile\\WonAuctions.cshtml",
-              "RelativeToolTip": "CommunityCenter\\Views\\Profile\\WonAuctions.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-05T22:18:44.655Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "BiddingHistory.cshtml",
-              "DocumentMoniker": "C:\\Users\\brett\\Desktop\\Code-You-Auction-App-Final-Project\\CommunityCenter\\Views\\Profile\\BiddingHistory.cshtml",
-              "RelativeDocumentMoniker": "CommunityCenter\\Views\\Profile\\BiddingHistory.cshtml",
-              "ToolTip": "C:\\Users\\brett\\Desktop\\Code-You-Auction-App-Final-Project\\CommunityCenter\\Views\\Profile\\BiddingHistory.cshtml",
-              "RelativeToolTip": "CommunityCenter\\Views\\Profile\\BiddingHistory.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-05T22:17:03.862Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ChangePassword.cshtml",
-              "DocumentMoniker": "C:\\Users\\brett\\Desktop\\Code-You-Auction-App-Final-Project\\CommunityCenter\\Views\\Profile\\ChangePassword.cshtml",
-              "RelativeDocumentMoniker": "CommunityCenter\\Views\\Profile\\ChangePassword.cshtml",
-              "ToolTip": "C:\\Users\\brett\\Desktop\\Code-You-Auction-App-Final-Project\\CommunityCenter\\Views\\Profile\\ChangePassword.cshtml",
-              "RelativeToolTip": "CommunityCenter\\Views\\Profile\\ChangePassword.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-05T22:15:23.939Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ProfileViewModels.cs",
-              "DocumentMoniker": "C:\\Users\\brett\\Desktop\\Code-You-Auction-App-Final-Project\\CommunityCenter\\ViewModels\\ProfileViewModels.cs",
-              "RelativeDocumentMoniker": "CommunityCenter\\ViewModels\\ProfileViewModels.cs",
-              "ToolTip": "C:\\Users\\brett\\Desktop\\Code-You-Auction-App-Final-Project\\CommunityCenter\\ViewModels\\ProfileViewModels.cs",
-              "RelativeToolTip": "CommunityCenter\\ViewModels\\ProfileViewModels.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-05T22:08:44.557Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ProfileController.cs",
-              "DocumentMoniker": "C:\\Users\\brett\\Desktop\\Code-You-Auction-App-Final-Project\\CommunityCenter\\Controllers\\ProfileController.cs",
-              "RelativeDocumentMoniker": "CommunityCenter\\Controllers\\ProfileController.cs",
-              "ToolTip": "C:\\Users\\brett\\Desktop\\Code-You-Auction-App-Final-Project\\CommunityCenter\\Controllers\\ProfileController.cs",
-              "RelativeToolTip": "CommunityCenter\\Controllers\\ProfileController.cs",
-              "ViewState": "AgIAAI4AAAAAAAAAAAAAAHQAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-05T22:04:24.561Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ChangePasswordViewModels.cs",
-              "DocumentMoniker": "C:\\Users\\brett\\Desktop\\Code-You-Auction-App-Final-Project\\CommunityCenter\\ViewModels\\ChangePasswordViewModels.cs",
-              "RelativeDocumentMoniker": "CommunityCenter\\ViewModels\\ChangePasswordViewModels.cs",
-              "ToolTip": "C:\\Users\\brett\\Desktop\\Code-You-Auction-App-Final-Project\\CommunityCenter\\ViewModels\\ChangePasswordViewModels.cs",
-              "RelativeToolTip": "CommunityCenter\\ViewModels\\ChangePasswordViewModels.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAQwAcAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-05T22:03:09.55Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
               "Title": "AuctionController.cs",
               "DocumentMoniker": "C:\\Users\\brett\\Desktop\\Code-You-Auction-App-Final-Project\\CommunityCenter\\Controllers\\AuctionController.cs",
               "RelativeDocumentMoniker": "CommunityCenter\\Controllers\\AuctionController.cs",
               "ToolTip": "C:\\Users\\brett\\Desktop\\Code-You-Auction-App-Final-Project\\CommunityCenter\\Controllers\\AuctionController.cs",
               "RelativeToolTip": "CommunityCenter\\Controllers\\AuctionController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFIAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAFgAAAAAAAAAAAAowBAAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-05T21:40:51.737Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\brett\\Desktop\\Code-You-Auction-App-Final-Project\\CommunityCenter\\Program.cs",
               "RelativeDocumentMoniker": "CommunityCenter\\Program.cs",
               "ToolTip": "C:\\Users\\brett\\Desktop\\Code-You-Auction-App-Final-Project\\CommunityCenter\\Program.cs",
               "RelativeToolTip": "CommunityCenter\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAArAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAgwAgAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-05T21:22:37.243Z"
+              "WhenOpened": "2024-12-05T21:22:37.243Z",
+              "EditorCaption": ""
             }
           ]
         }
