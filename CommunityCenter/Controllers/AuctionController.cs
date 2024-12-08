@@ -41,14 +41,15 @@ public class AuctionController : Controller
     }
 
     [HttpPost]
-    public async Task<IActionResult> PlaceBid(int dessertId, decimal bidAmount)
+    [ValidateAntiForgeryToken]
+    public async Task<IActionResult> PlaceBid([FromBody] BidModel model)
     {
         if (!_auctionService.IsAuctionStarted)
         {
             return Json(new { success = false, message = "Auction has not started yet" });
         }
 
-        var dessert = await _context.Desserts.FindAsync(dessertId);
+        var dessert = await _context.Desserts.FindAsync(model.DessertId);
         var bidder = await _userManager.FindByNameAsync(User.Identity?.Name);
 
         // Validate dessert and bidder
@@ -64,28 +65,28 @@ public class AuctionController : Controller
         }
 
         // Validate bid amount is a whole dollar amount
-        if (bidAmount % 1 != 0)
+        if (model.BidAmount % 1 != 0)
         {
             return Json(new { success = false, message = "Bid must be a whole dollar amount" });
         }
 
         // Validate bid amount is higher than current price
-        if (bidAmount <= dessert.CurrentPrice)
+        if (model.BidAmount <= dessert.CurrentPrice)
         {
             return Json(new { success = false, message = $"Bid must be higher than ${dessert.CurrentPrice}" });
         }
 
         var bid = new Bid
         {
-            DessertId = dessertId,
+            DessertId = model.DessertId,
             BidderId = bidder.Id,
-            Amount = bidAmount,
+            Amount = model.BidAmount,
             TimeStamp = DateTime.UtcNow,
             Dessert = dessert,
             Bidder = bidder
         };
 
-        dessert.CurrentPrice = bidAmount;
+        dessert.CurrentPrice = model.BidAmount;
         dessert.WinningBidderId = bidder.Id;
         dessert.WinningBidder = bidder;
 
@@ -94,11 +95,17 @@ public class AuctionController : Controller
 
         // Notify all clients of the new bid
         await _hubContext.Clients.All.SendAsync("BidUpdated",
-            dessertId,
-            bidAmount,
+            model.DessertId,
+            model.BidAmount,
             bidder.Id,
             bidder.UserName);
 
         return Json(new { success = true });
     }
+}
+
+public class BidModel
+{
+    public int DessertId { get; set; }
+    public decimal BidAmount { get; set; }
 }

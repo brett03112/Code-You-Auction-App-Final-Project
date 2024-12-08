@@ -8,6 +8,8 @@
         Loading...
     </div>
 
+    @Html.AntiForgeryToken()
+
     <div class="row">
         @foreach (var dessert in Model)
         {
@@ -69,11 +71,17 @@
             });
         });
 
+        connection.on("AuctionEnded", () => {
+            document.querySelectorAll('.bid-section').forEach(section => {
+                section.style.display = 'none';
+            });
+        });
+
         connection.start();
 
         document.querySelectorAll('.place-bid').forEach(button => {
             button.addEventListener('click', async () => {
-                const dessertId = button.dataset.dessertId;
+                const dessertId = parseInt(button.dataset.dessertId);
                 const bidInput = button.closest('.bid-form').querySelector('.bid-amount');
                 const bidAmount = parseFloat(bidInput.value);
 
@@ -83,12 +91,17 @@
                 }
 
                 try {
+                    const token = document.querySelector('input[name="__RequestVerificationToken"]').value;
                     const response = await fetch('/Auction/PlaceBid', {
                         method: 'POST',
                         headers: {
-                            'Content-Type': 'application/json'
+                            'Content-Type': 'application/json',
+                            'RequestVerificationToken': token
                         },
-                        body: JSON.stringify({ dessertId, bidAmount })
+                        body: JSON.stringify({
+                            dessertId: dessertId,
+                            bidAmount: bidAmount
+                        })
                     });
 
                     const result = await response.json();

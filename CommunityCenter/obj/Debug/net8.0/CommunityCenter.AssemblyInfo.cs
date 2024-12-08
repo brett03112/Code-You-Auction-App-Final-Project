@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CommunityCenter")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1640b35ca0381d32957fd23e4952d847bd0cd746")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+58020523ac3eff0d68cb8cc5424dad1cf4c7beb6")]
 [assembly: System.Reflection.AssemblyProductAttribute("CommunityCenter")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CommunityCenter")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

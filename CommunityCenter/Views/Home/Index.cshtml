@@ -34,7 +34,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">Past Auctions</h5>
                                 <p class="card-text">View completed auctions and winning bids.</p>
-                                <a href="@Url.Action("Index", "PastAuctions")" class="btn btn-secondary btn-lg">
+                                <a href="@Url.Action("PastAuctions", "Home")" class="btn btn-secondary btn-lg">
                                     View Past Auctions
                                 </a>
                             </div>
@@ -51,23 +51,21 @@
 @section Scripts {
     <script>
         document.getElementById('startAuction')?.addEventListener('click', async function() {
-            const days = parseInt(document.getElementById('days').value);
-            const hours = parseInt(document.getElementById('hours').value);
-            const minutes = parseInt(document.getElementById('minutes').value);
-
             try {
+                const token = document.querySelector('input[name="__RequestVerificationToken"]').value;
                 const response = await fetch('/Home/StartAuction', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
-                        'RequestVerificationToken': document.querySelector('input[name="__RequestVerificationToken"]').value
-                    },
-                    body: JSON.stringify({ days, hours, minutes })
+                        'RequestVerificationToken': token
+                    }
                 });
 
                 const result = await response.json();
                 if (result.success) {
                     window.location.href = '/Auction';
+                } else {
+                    alert(result.message || 'Failed to start auction. Please try again.');
                 }
             } catch (error) {
                 console.error('Error starting auction:', error);

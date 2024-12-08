@@ -9,6 +9,7 @@ using Microsoft.AspNetCore.SignalR;
 using Microsoft.AspNetCore.Identity;
 using CommunityCenter.wwwroot.js.signalr.Hubs;
 using static CommunityCenter.Models.CommunityCenterModels;
+using CommunityCenter.ViewModels;
 
 namespace CommunityCenter.Controllers;
 
@@ -49,13 +50,18 @@ public class HomeController : Controller
     public async Task<IActionResult> StartAuction()
     {
         _auctionService.StartAuction();
-        var endTime = _auctionService.AuctionEndTime.Value;
+        
+        // Get the end time, which should now be set after calling StartAuction
+        DateTime endTime = _auctionService.AuctionEndTime!.Value;
 
         var desserts = await _context.Desserts.ToListAsync();
         foreach (var dessert in desserts)
         {
             dessert.IsActive = true;
             dessert.EndTime = endTime;
+            dessert.CurrentPrice = 25.00m; // Set starting price to $25.00
+            dessert.WinningBidderId = null; // Reset winning bidder
+            dessert.WinningBidder = null;
         }
 
         await _context.SaveChangesAsync();
@@ -67,6 +73,26 @@ public class HomeController : Controller
         await _hubContext.Clients.All.SendAsync("AuctionStarted", endTime.ToString("o"));
 
         return Json(new { success = true, endTime = endTime });
+    }
+
+    public async Task<IActionResult> PastAuctions()
+    {
+        var pastAuctions = await _context.Desserts
+            .Include(d => d.WinningBidder)
+            .Where(d => !d.IsActive)
+            .OrderByDescending(d => d.EndTime)
+            .Select(d => new PastAuctionViewModel
+            {
+                DessertId = d.Id,
+                DessertName = d.Name,
+                ImageUrl = d.ImageUrl,
+                WinnerName = d.WinningBidder != null ? d.WinningBidder.UserName : "No Winner",
+                FinalPrice = d.CurrentPrice,
+                EndTime = d.EndTime
+            })
+            .ToListAsync();
+
+        return View(pastAuctions);
     }
 
     public IActionResult Privacy()

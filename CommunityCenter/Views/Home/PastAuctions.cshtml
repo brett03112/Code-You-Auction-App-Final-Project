@@ -1,0 +1,28 @@
+@model IEnumerable<CommunityCenter.ViewModels.PastAuctionViewModel>
+
+<div class="container">
+    <h2 class="mb-4">Past Auctions</h2>
+
+    <div class="row">
+        @foreach (var auction in Model)
+        {
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="@auction.ImageUrl" class="card-img-top" alt="@auction.DessertName">
+                    <div class="card-body">
+                        <h5 class="card-title">@auction.DessertName</h5>
+                        <div class="auction-details">
+                            <p><strong>Winner:</strong> @auction.WinnerName</p>
+                            <p><strong>Final Price:</strong> $@auction.FinalPrice.ToString("F2")</p>
+                            <p><strong>Ended:</strong> @auction.EndTime.ToString("g")</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+
+    <div class="text-center mt-4">
+        <a href="@Url.Action("Index", "Home")" class="btn btn-primary">Back to Home</a>
+    </div>
+</div>
