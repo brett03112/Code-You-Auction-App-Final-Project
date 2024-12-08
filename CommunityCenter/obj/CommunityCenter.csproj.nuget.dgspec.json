@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\brett\\Desktop\\Final-Proj\\Code-You-Auction-App-Final-Project\\CommunityCenter\\CommunityCenter.csproj": {}
+    "C:\\Users\\brett\\OneDrive\\Desktop\\Code-You-Auction-App-Final-Project\\CommunityCenter\\CommunityCenter.csproj": {}
   },
   "projects": {
-    "C:\\Users\\brett\\Desktop\\Final-Proj\\Code-You-Auction-App-Final-Project\\CommunityCenter\\CommunityCenter.csproj": {
+    "C:\\Users\\brett\\OneDrive\\Desktop\\Code-You-Auction-App-Final-Project\\CommunityCenter\\CommunityCenter.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\brett\\Desktop\\Final-Proj\\Code-You-Auction-App-Final-Project\\CommunityCenter\\CommunityCenter.csproj",
+        "projectUniqueName": "C:\\Users\\brett\\OneDrive\\Desktop\\Code-You-Auction-App-Final-Project\\CommunityCenter\\CommunityCenter.csproj",
         "projectName": "CommunityCenter",
-        "projectPath": "C:\\Users\\brett\\Desktop\\Final-Proj\\Code-You-Auction-App-Final-Project\\CommunityCenter\\CommunityCenter.csproj",
+        "projectPath": "C:\\Users\\brett\\OneDrive\\Desktop\\Code-You-Auction-App-Final-Project\\CommunityCenter\\CommunityCenter.csproj",
         "packagesPath": "C:\\Users\\brett\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\brett\\Desktop\\Final-Proj\\Code-You-Auction-App-Final-Project\\CommunityCenter\\obj\\",
+        "outputPath": "C:\\Users\\brett\\OneDrive\\Desktop\\Code-You-Auction-App-Final-Project\\CommunityCenter\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

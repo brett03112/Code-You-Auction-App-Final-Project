@@ -1,47 +1,16 @@
 ﻿@model AuctionTimerModel
+
+<div class="auction-timer" data-end-time="@Model.EndTime.ToString("o")" data-started="@Model.IsAuctionStarted.ToString().ToLower()">
+    Auction not started
+</div>
+
 @if (User.IsInRole("Admin"))
 {
     <div class="card mt-4">
         <div class="card-body">
-            <h5 class="card-title">Auction Timer Control</h5>
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="form-group">
-                        <label>Days</label>
-                        <select id="days" class="form-select">
-                            @for (int i = 0; i <= 0; i++)
-                            {
-                                <option value="@i">@i</option>
-                            }
-                        </select>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="form-group">
-                        <label>Hours</label>
-                        <select id="hours" class="form-select">
-                            @for (int i = 0; i <= 0; i++)
-                            {
-                                <option value="@i">@i</option>
-                            }
-                        </select>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="form-group">
-                        <label>Minutes</label>
-                        <select id="minutes" class="form-select">
-                            @for (int i = 1; i <= 2; i++)
-                            {
-                                <option value="@i">@i</option>
-                            }
-                        </select>
-                    </div>
-                </div>
-                <div class="col-md-3 d-flex align-items-end">
-                    <button id="startAuction" class="btn btn-primary">Start Auction</button>
-                </div>
-            </div>
+            <h5 class="card-title">Auction Control</h5>
+            <p class="card-text">Start a 3-minute auction for all active items.</p>
+            <button id="startAuction" class="btn btn-primary">Start Auction</button>
         </div>
     </div>
 }

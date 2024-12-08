@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "WIkXUvTN/QU=",
+  "dgSpecHash": "pBuVNfzv9Vw=",
   "success": true,
-  "projectFilePath": "C:\\Users\\brett\\Desktop\\Final-Proj\\Code-You-Auction-App-Final-Project\\CommunityCenter\\CommunityCenter.csproj",
+  "projectFilePath": "C:\\Users\\brett\\OneDrive\\Desktop\\Code-You-Auction-App-Final-Project\\CommunityCenter\\CommunityCenter.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\brett\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\brett\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

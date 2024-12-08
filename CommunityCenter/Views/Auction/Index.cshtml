@@ -3,32 +3,33 @@
 
 <div class="container">
     <h2 class="mb-4">Active Auctions</h2>
-    @if (User.IsInRole("Admin"))
-    {
-        <a asp-action="Create" class="btn btn-primary mb-3">Create New Auction</a>
-    }
+    
+    <div class="auction-timer" data-end-time="@ViewBag.AuctionTimer?.EndTime.ToString("o")" data-started="@ViewBag.AuctionTimer?.IsAuctionStarted.ToString().ToLower()">
+        Loading...
+    </div>
+
     <div class="row">
         @foreach (var dessert in Model)
         {
             <div class="col-md-4 mb-4">
-                <div class="card">
+                <div class="card auction-item" data-dessert-id="@dessert.Id">
                     <img src="@dessert.ImageUrl" class="card-img-top" alt="@dessert.Name">
                     <div class="card-body">
                         <h5 class="card-title">@dessert.Name</h5>
                         <p class="card-text">@dessert.Description</p>
-                        <div class="current-price" data-dessert-id="@dessert.Id">
+                        <div class="current-price">
                             Current Price: $<span class="price-value">@dessert.CurrentPrice.ToString("F2")</span>
                         </div>
-                        <div class="current-winner" data-dessert-id="@dessert.Id">
+                        <div class="current-winner">
                             Leading Bidder: <span class="winner-name">@(dessert.WinningBidder?.UserName ?? "No bids yet")</span>
                         </div>
-                        <div class="bid-form">
-                            <input type="number" step="0.01" class="form-control bid-amount" />
-                            <button class="btn btn-primary mt-2 place-bid" data-dessert-id="@dessert.Id">
-                                Place Bid
-                            </button>
-                        </div>
-                        <div class="time-remaining" data-end-time="@dessert.EndTime.ToString("O")">
+                        <div class="bid-section" style="display: @(ViewBag.AuctionTimer?.IsAuctionStarted == true ? "block" : "none")">
+                            <div class="bid-form">
+                                <input type="number" step="1" class="form-control bid-amount" placeholder="Enter bid amount" />
+                                <button class="btn btn-primary mt-2 place-bid" data-dessert-id="@dessert.Id">
+                                    Place Bid
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -56,6 +57,18 @@
             }
         });
 
+        connection.on("AuctionStarted", (endTime) => {
+            document.querySelectorAll('.bid-section').forEach(section => {
+                section.style.display = 'block';
+            });
+            
+            // Update all auction timers
+            document.querySelectorAll('.auction-timer').forEach(timer => {
+                timer.dataset.endTime = endTime;
+                timer.dataset.started = "true";
+            });
+        });
+
         connection.start();
 
         document.querySelectorAll('.place-bid').forEach(button => {
@@ -73,8 +86,7 @@
                     const response = await fetch('/Auction/PlaceBid', {
                         method: 'POST',
                         headers: {
-                            'Content-Type': 'application/json',
-                            'RequestVerificationToken': document.querySelector('input[name="__RequestVerificationToken"]').value
+                            'Content-Type': 'application/json'
                         },
                         body: JSON.stringify({ dessertId, bidAmount })
                     });
@@ -87,29 +99,9 @@
                     }
                 } catch (error) {
                     console.error('Error placing bid:', error);
+                    alert('Failed to place bid. Please try again.');
                 }
             });
         });
-
-        function updateTimeRemaining() {
-            document.querySelectorAll('.time-remaining').forEach(element => {
-                const endTime = new Date(element.dataset.endTime);
-                const now = new Date();
-                const diff = endTime - now;
-
-                if (diff <= 0) {
-                    element.textContent = 'Auction ended';
-                    element.closest('.card').querySelector('.bid-form').style.display = 'none';
-                } else {
-                    const hours = Math.floor(diff / (1000 * 60 * 60));
-                    const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-                    const seconds = Math.floor((diff % (1000 * 60)) / 1000);
-                    element.textContent = `Time remaining: ${hours}h ${minutes}m ${seconds}s`;
-                }
-            });
-        }
-
-        setInterval(updateTimeRemaining, 1000);
-        updateTimeRemaining();
     </script>
 }
